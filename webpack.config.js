@@ -63,7 +63,7 @@ module.exports = {
     }),
     new BrowserSyncPlugin({
       files: '**/*.php',
-      proxy: 'http://one.wordpress.test'
+      proxy: 'http://dev.am2.hr'
     })
   ],
   optimization: {

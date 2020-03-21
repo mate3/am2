@@ -168,3 +168,18 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+
+// Register Custom Navigation Walker
+require_once get_template_directory() . '/wp_bem_menu.php';
+
+function hide_editor() {
+  $post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
+  if( !isset( $post_id ) ) return;
+
+  $template_file = get_post_meta($post_id, '_wp_page_template', true);
+   
+  if($template_file == 'page-builder.php'){ // edit the template name
+      remove_post_type_support('page', 'editor');
+  }
+}
