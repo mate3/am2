@@ -12,7 +12,7 @@
 	@for $i from 2 through 9 {
 
 		.gallery-columns-#{$i} & {
-			max-width: map-get( $columns, $i );
+			max-width: map-get($columns, $i);
 		}
 	}
 }

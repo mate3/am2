@@ -26,7 +26,7 @@
  * Star rating
  */
 .star-rating {
-	font-family: "star";
+	font-family: 'star';
 	font-size: 1em;
 	font-weight: 400;
 	height: 1.618em;
@@ -36,7 +36,7 @@
 	width: 5.3em;
 
 	&::before {
-		content: "\53\53\53\53\53";
+		content: '\53\53\53\53\53';
 		float: left;
 		left: 0;
 		opacity: 0.25;
@@ -55,7 +55,7 @@
 
 	span::before {
 		color: $color__link;
-		content: "\53\53\53\53\53";
+		content: '\53\53\53\53\53';
 		left: 0;
 		position: absolute;
 		top: 0;
@@ -76,9 +76,9 @@ p.stars {
 
 		&::before {
 			color: $color__text-main;
-			content: "\53";
+			content: '\53';
 			display: block;
-			font-family: "star";
+			font-family: 'star';
 			height: 1em;
 			left: 0;
 			line-height: 1;
@@ -93,7 +93,7 @@ p.stars {
 
 			~ a::before {
 				color: $color__text-main;
-				content: "\53";
+				content: '\53';
 				opacity: 0.25;
 			}
 		}
@@ -105,7 +105,7 @@ p.stars {
 
 			&::before {
 				color: $color__link;
-				content: "\53";
+				content: '\53';
 				opacity: 1;
 			}
 		}
@@ -117,13 +117,13 @@ p.stars {
 
 			&::before {
 				color: $color__link;
-				content: "\53";
+				content: '\53';
 				opacity: 1;
 			}
 
 			~ a::before {
 				color: $color__text-main;
-				content: "\53";
+				content: '\53';
 				opacity: 0.25;
 			}
 		}
@@ -132,7 +132,7 @@ p.stars {
 
 			&::before {
 				color: $color__link;
-				content: "\53";
+				content: '\53';
 				opacity: 1;
 			}
 		}

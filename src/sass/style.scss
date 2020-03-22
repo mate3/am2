@@ -1,27 +1,8 @@
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
---------------------------------------------------------------*/
+@import 'media-blender';
 @import 'variables-site/variables-site';
 @import 'mixins/mixins-master';
+@import 'mixins/container';
+@import 'mixins/flex-container';
 
 /*--------------------------------------------------------------
 # Normalize
@@ -44,9 +25,10 @@
 @import 'forms/forms';
 
 /*--------------------------------------------------------------
-# Navigation
+# Header / Footer
 --------------------------------------------------------------*/
-@import 'navigation/navigation';
+@import 'header/header';
+@import 'footer/footer';
 
 /*--------------------------------------------------------------
 # Accessibility

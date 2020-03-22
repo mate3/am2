@@ -1,0 +1,108 @@
+@import 'navigation/navigation';
+
+.header {
+	align-items: center;
+	background: rgba($base-black-color, 0.8);
+	display: flex;
+	height: $header-height;
+	position: relative;
+	transition: background-color 0.3s ease-in-out;
+	width: 100%;
+	z-index: 100;
+	//margin-top: 60px;
+
+	@include media(tablet up) {
+		height: $header-height;
+	}
+
+	&.is-sticky {
+		height: $header-height;
+		position: fixed;
+	}
+
+	&__container {
+
+		@include site-container();
+		align-items: center;
+		display: flex;
+		width: 100%;
+	}
+
+	&__sticky {
+		//background-color: $base-white-color;
+		align-items: center;
+		display: flex;
+		height: 95px;
+		justify-content: space-between;
+		position: fixed;
+		transition: background-color 0.3s ease-in-out;
+		width: 100%;
+		z-index: $header;
+
+		// &::before {
+		// 	box-shadow: 0 2px 5px 0 rgba(red, 0.15);
+		// 	content: '';
+		// 	height: 100%;
+		// 	left: 0;
+		// 	position: absolute;
+		// 	top: 0;
+		// 	width: 100%;
+		// 	z-index: $header;
+		// }
+
+		@include media(tablet up) {
+			height: 95px;
+			position: absolute;
+		}
+
+		&.is-sticky {
+			position: fixed;
+
+			@include media(tablet up) {
+				height: 95px;
+			}
+		}
+	}
+
+	&__menu {
+		height: 100vh;
+		left: -100%;
+		margin-left: auto;
+		position: absolute;
+		top: 0;
+		transition: all 0.3s ease-in-out;
+		width: 100%;
+		z-index: $mobile-menu;
+
+		@include media(desktop up) {
+			height: 100%;
+			left: auto;
+			position: relative;
+			z-index: $header-items;
+		}
+
+		&.is-active {
+			left: 0;
+		}
+	}
+
+	&__logo-link,
+	&__logo-img {
+		position: relative;
+		z-index: $logo;
+	}
+
+	&__item {
+
+		&--mobile-trigger {
+			display: block;
+
+			@include media(desktop up) {
+				display: none;
+			}
+		}
+	}
+
+
+}
+

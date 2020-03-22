@@ -1,0 +1,21 @@
+//Base
+$base-font-size: 16px;
+$base-font-family: 'Raleway', sans-serif;
+$second-font-family: 'Playfair Display', serif;
+
+//Container
+$base-content-padding: 15px;
+$base-content-full-width: 1170px;
+$base-content-width: $base-content-full-width + ($base-content-padding*2);
+
+//Container small
+$small-content-padding: 15px;
+$small-content-full-width: 770px;
+$small-content-width: $small-content-full-width + ($small-content-padding*2);
+
+//Header Main
+$header-height: 100px;
+$header-height-tablet: 70px;
+
+//Header additional
+$header-additional-height: 40px;

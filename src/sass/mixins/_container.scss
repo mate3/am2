@@ -1,0 +1,13 @@
+// Container normal.
+@mixin site-container($max-width: $base-content-width) {
+
+	@extend %site-padding;
+	margin: 0 auto;
+	max-width: $max-width;
+}
+
+// Container no padding.
+@mixin container($max-width: $base-content-width) {
+	margin: 0 auto;
+	max-width: $max-width;
+}

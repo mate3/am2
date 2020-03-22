@@ -22,7 +22,7 @@ table.shop_table_responsive {
 			text-align: right;
 
 			&::before {
-				content: attr(data-title) ": ";
+				content: attr(data-title) ': ';
 				float: left;
 			}
 
@@ -73,7 +73,8 @@ table.shop_table_responsive {
 
 		tr {
 
-			th, td {
+			th,
+			td {
 				text-align: left;
 			}
 

@@ -1,0 +1,15 @@
+// Flex container.
+@mixin flex-container( $layout: 2 ) {
+	$children-spacing: #{ (100 / $layout) + '%' };
+	align-items: stretch;
+
+	display: flex;
+
+	/*justify-content: space-between;*/
+	flex-wrap: wrap;
+
+	& > * {
+		flex: 0 0 $children-spacing;
+		max-width: $children-spacing;
+	}
+}
