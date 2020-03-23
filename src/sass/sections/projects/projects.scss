@@ -1,5 +1,5 @@
-.services {
-  background: $base-gallery-color;
+.projects {
+  background: $base-alabaster-color;
   padding: $section-spacing-mobile;
 
   @include media(tablet up) {
@@ -54,13 +54,12 @@
 
   &__item {
     display: flex;
+    justify-content: center;
   }
 
   &__content {
-    background: $base-white-color;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
     margin: 15px;
-    padding: 40px 20px;
     transition: box-shadow 0.3s ease-in-out;
 
     &:hover {
@@ -73,20 +72,33 @@
     margin: 0 auto;
   }
 
-  &__item-title {
-    font-size: map-get($typography-map, 'medium');
-    font-weight: 600;
-    padding-top: 20px;
-    text-align: center;
-    text-transform: uppercase;
+
+  &__load-more {
+    display: flex;
+    justify-content: center;
+    margin: 90px auto 0;
+    max-width: 190px;
   }
 
-  &__text {
-
-    @extend %paragraph-reset;
-    font-size: map-get($typography-map, 'default');
-    padding-top: 25px;
+  &__button {
+    background: $base-eucalyptus-color;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    color: $base-white-color;
+    font-size: map-get($typography-map, 'middle');
+    font-weight: 300;
+    padding: 20px 10px;
     text-align: center;
-  }
+    text-decoration: none;
+    transition-duration: 0.3s;
+    transition-property: box-shadow, background-color;
+    transition-timing-function: ease-in-out;
+    width: 100%;
 
+    &:hover,
+    &:active {
+      background: $base-jewel-color;
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+    }
+  }
 }
