@@ -70,6 +70,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.6.0",
-    "media-blender": "^2.1.0"
+    "media-blender": "^2.1.0",
+    "swiper": "^5.3.6"
   }
 }

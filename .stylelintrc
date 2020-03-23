@@ -5,5 +5,6 @@
     "order/properties-alphabetical-order": false,
     "max-line-length": 120,
     "string-quotes": "single",
+		"indentation": 2
   }
 }

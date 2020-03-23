@@ -1,4 +1,5 @@
 @import 'media-blender';
+@import 'swiper/swiper';
 @import 'variables-site/variables-site';
 @import 'mixins/mixins-master';
 @import 'mixins/container';
@@ -64,3 +65,11 @@
 # Media
 --------------------------------------------------------------*/
 @import 'media/media';
+
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import 'sections/slider/slider';
+@import 'sections/services/services';
+

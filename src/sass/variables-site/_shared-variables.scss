@@ -1,7 +1,6 @@
 //Base
 $base-font-size: 16px;
-$base-font-family: 'Raleway', sans-serif;
-$second-font-family: 'Playfair Display', serif;
+$base-font-family: 'Montserrat', sans-serif;
 
 //Container
 $base-content-padding: 15px;
@@ -19,3 +18,30 @@ $header-height-tablet: 70px;
 
 //Header additional
 $header-additional-height: 40px;
+
+//Typography
+$typography-map: (
+	default:        $base-font-size,
+
+	huge:           50px,
+	big:            32px,
+
+	large:          28px,
+	medium:         18px,
+	small:          16px,
+);
+
+// Only for typograpy size helper
+$typography-mobile-map: (
+	default:        $base-font-size,
+
+	huge:           48px,
+	big:            24px,
+
+	large:          24px,
+	medium:         18px,
+	small:          16px
+);
+
+$section-spacing: 120px 0;
+$section-spacing-mobile: 60px 0;

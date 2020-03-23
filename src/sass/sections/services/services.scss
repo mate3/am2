@@ -1,0 +1,91 @@
+.services {
+  background: $base-gallery-color;
+  padding: $section-spacing-mobile;
+
+  @include media(tablet up) {
+    padding: $section-spacing;
+  }
+
+  &__container {
+
+    @include site-container();
+  }
+
+  &__title {
+
+    @extend %heading-reset;
+    color: $base-tundora-color;
+    font-size: map-get($typography-mobile-map, 'large');
+    text-align: center;
+    text-transform: uppercase;
+
+    @include media(tablet up) {
+      font-size: map-get($typography-map, 'large');
+    }
+  }
+
+  &__intro {
+    font-size: map-get($typography-map, 'medium');
+    margin: 30px auto 0;
+    max-width: 630px;
+    text-align: center;
+    width: 100%;
+
+    @include media(tablet up) {
+      font-size: map-get($typography-map, 'medium');
+    }
+  }
+
+  &__list {
+
+    @include flex-container(1);
+    margin: 100px -15px 0;
+
+    @include media(tablet up) {
+
+      @include flex-container(2);
+    }
+
+    @include media(desktop up) {
+
+      @include flex-container(3);
+    }
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__content {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    padding: 40px 20px;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 12px 10px 0 rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__item-title {
+    font-size: map-get($typography-map, 'medium');
+    font-weight: 600;
+    padding-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__text {
+
+    @extend %paragraph-reset;
+    font-size: map-get($typography-map, 'default');
+    padding-top: 25px;
+    text-align: center;
+  }
+
+}
