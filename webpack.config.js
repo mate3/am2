@@ -5,6 +5,9 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
+const outputFile = '[name]-[hash].[ext]';
+const outputImages = `images/${outputFile}`;
+
 module.exports = {
   context: __dirname,
   entry: {
@@ -42,7 +45,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(jpe?g|png|gif)\$/,
+        test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
             loader: 'file-loader',

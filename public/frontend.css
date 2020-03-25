@@ -115,7 +115,7 @@
 .slider__link {
   transition: color 0.2s ease-in; }
 
-.services__title, .projects__title {
+.services__title, .projects__title, .team__title, .team__item-title {
   margin: 0;
   padding: 0; }
 
@@ -128,7 +128,7 @@
   margin: 0;
   padding: 0; }
 
-.header__container, .footer__info, .slider__content, .services__container, .projects__container {
+.header__container, .footer__info, .slider__content, .services__container, .projects__container, .team__container {
   padding-left: 15px;
   padding-right: 15px; }
 
@@ -1316,4 +1316,126 @@ object {
     .projects__button:hover, .projects__button:active {
       background: #1e8c4b;
       box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2); }
+
+.team {
+  background: #efefef;
+  padding: 60px 0; }
+  @media (min-width: 768px) {
+    .team {
+      padding: 120px 0; } }
+  .team__container {
+    margin: 0 auto;
+    max-width: 1200px; }
+  .team__title {
+    color: #4a4747;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase; }
+    @media (min-width: 768px) {
+      .team__title {
+        font-size: 28px; } }
+  .team__intro {
+    font-size: 18px;
+    margin: 30px auto 0;
+    max-width: 630px;
+    text-align: center;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .team__intro {
+        font-size: 18px; } }
+  .team__list {
+    align-items: stretch;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 100px -15px 0; }
+    .team__list > * {
+      flex: 0 0 100%;
+      max-width: 100%; }
+    @media (min-width: 768px) {
+      .team__list {
+        align-items: stretch;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        .team__list > * {
+          flex: 0 0 50%;
+          max-width: 50%; } }
+    @media (min-width: 992px) {
+      .team__list {
+        align-items: stretch;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        .team__list > * {
+          flex: 0 0 25%;
+          max-width: 25%; } }
+  .team__item {
+    display: flex;
+    justify-content: center; }
+  .team__content {
+    background: #fff;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: box-shadow 0.3s ease-in-out; }
+    .team__content:hover {
+      box-shadow: 0 12px 10px 0 rgba(0, 0, 0, 0.2); }
+      .team__content:hover .team__info {
+        bottom: 0; }
+  .team__image {
+    display: block;
+    margin: 0 auto; }
+  .team__info {
+    background: rgba(255, 255, 255, 0.5);
+    bottom: 0;
+    padding: 20px 10px 15px;
+    position: absolute;
+    transition: bottom 0.3s ease-in-out;
+    width: 100%; }
+    @media (min-width: 992px) {
+      .team__info {
+        bottom: -100%; } }
+  .team__item-title {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase; }
+  .team__social {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 140px;
+    padding-top: 10px;
+    width: 100%; }
+    .team__social--fb {
+      background: url("/wp-content/themes/am2/public/images/fb.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 20px;
+      width: 20px; }
+    .team__social--rss {
+      background: url("/wp-content/themes/am2/public/images/rss.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 20px;
+      width: 20px; }
+    .team__social--tw {
+      background: url("/wp-content/themes/am2/public/images/tw.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 20px;
+      width: 20px; }
+    .team__social--pt {
+      background: url("/wp-content/themes/am2/public/images/pt.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 20px;
+      width: 20px; }
 
