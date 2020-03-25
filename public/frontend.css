@@ -1439,3 +1439,57 @@ object {
       height: 20px;
       width: 20px; }
 
+.testimonials {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  padding: 60px 0; }
+  @media (min-width: 768px) {
+    .testimonials {
+      padding: 120px 0; } }
+  .testimonials__item {
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center; }
+  .testimonials__content {
+    background: #fff;
+    max-width: 970px;
+    padding: 50px 50px 120px;
+    width: 100%; }
+  .testimonials__image {
+    display: block;
+    margin: 0 auto; }
+  .testimonials__text {
+    color: #4a4747;
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 700px;
+    padding-top: 20px;
+    text-align: center;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .testimonials__text {
+        font-size: 16px; } }
+  .testimonials__pagination {
+    bottom: 70px;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: relative;
+    right: 0;
+    z-index: 1; }
+  .testimonials__bullet {
+    background-color: rgba(38, 175, 95, 0.5);
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    margin: 0 10px;
+    transform: rotate(45deg);
+    width: 15px; }
+    .testimonials__bullet--active {
+      background-color: #1e8c4b; }
+
