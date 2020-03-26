@@ -68,11 +68,13 @@
 
 
 /*--------------------------------------------------------------
-# Media
+# Sections
 --------------------------------------------------------------*/
 @import 'sections/slider/slider';
 @import 'sections/services/services';
 @import 'sections/projects/projects';
 @import 'sections/team/team';
 @import 'sections/testimonials/testimonials';
-
+@import 'sections/clients/clients';
+@import 'sections/latest-news/latest-news';
+@import 'blog/article';

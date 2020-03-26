@@ -30,6 +30,7 @@ $typography-map: (
 	middle:					20px,
 	medium:         18px,
 	small:          16px,
+	smaller:        14px,
 );
 
 // Only for typograpy size helper
@@ -42,7 +43,8 @@ $typography-mobile-map: (
 	large:          24px,
 	middle:					20px,
 	medium:         18px,
-	small:          16px
+  small:          16px,
+  smaller:        14px,
 );
 
 $section-spacing: 120px 0;

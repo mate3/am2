@@ -1,0 +1,121 @@
+.article {
+  $this: &;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 50px 0;
+  position: relative;
+  transition: background-color 0.3s ease;
+
+  &__item {
+    margin-bottom: 40px;
+
+    &--featured {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    height: 100%;
+    max-height: 245px;
+    min-height: 244px;
+    width: 100%;
+  }
+
+  &__content {
+    background: $base-white-color;
+    border-radius: 0 0 5px 5px;
+    padding: 0 25px 20px;
+  }
+
+  &__title {
+
+    @extend %heading-reset;
+    color: $base-tundora-color;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 30px;
+    width: 100%;
+
+    @include media(tablet up) {
+      margin-top: 20px;
+    }
+  }
+
+  &__intro {
+    color: $base-tundora-color;
+    display: inline-block;
+    font-size: map-get($typography-mobile-map, 'smaller');
+    padding-top: 30px;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__date {
+    color: $base-tundora-color;
+    display: inline-block;
+    font-size: map-get($typography-mobile-map, 'smaller');
+    padding-left: 20px;
+    padding-top: 25px;
+    position: relative;
+    text-decoration: none;
+
+    &::before {
+      background: url('/wp-content/themes/am2/public/images/date.png');
+      background-size: cover;
+      bottom: 4px;
+      content: '';
+      height: 14px;
+      left: 0;
+      position: absolute;
+      width: 14px;
+    }
+  }
+
+  &__comments {
+    
+    color: $base-tundora-color;
+    display: inline-block;
+    font-size: map-get($typography-mobile-map, 'smaller');
+    padding-left: 20px;
+    padding-top: 25px;
+    position: relative;
+    text-decoration: none;
+
+    &::before {
+      background: url('/wp-content/themes/am2/public/images/comments.png');
+      background-size: cover;
+      bottom: 4px;
+      content: '';
+      height: 14px;
+      left: 0;
+      position: absolute;
+      width: 14px;
+    }
+  }
+
+  &__link {
+    border-radius: 5px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: box-shadow 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 12px 10px 0 rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
