@@ -2,22 +2,26 @@
 
 .header {
 	align-items: center;
-	background: rgba($base-black-color, 0.8);
+	
 	display: flex;
 	height: $header-height;
-	position: relative;
+	position: absolute;
 	transition: background-color 0.3s ease-in-out;
 	width: 100%;
-	z-index: 100;
+  z-index: 100;
+  top: 0;
 	//margin-top: 60px;
-
-	@include media(tablet up) {
+  
+	@include media(desktop up) {
+    top: 50px;
 		height: $header-height;
 	}
 
 	&.is-sticky {
 		height: $header-height;
-		position: fixed;
+    position: fixed;
+    background: rgba($base-black-color, 0.8);
+    top: 0;
 	}
 
 	&__container {

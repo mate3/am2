@@ -1,10 +1,11 @@
 import { MobileMenu } from './mobile-menu.js';
+import { StickyHeader } from './sticky-header';
 
 document.addEventListener('DOMContentLoaded', function() {
-  //const header = new Header();
+  const stickyHeader = new StickyHeader();
   const mobileMenu = new MobileMenu();
 
-  //header.init();
+  stickyHeader.init();
 
   mobileMenu.mobileTrigger.addEventListener('click', mobileMenu.openMenuCallback);
 

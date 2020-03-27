@@ -13,6 +13,7 @@
     @extend %heading-reset;
     color: $base-tundora-color;
     font-size: map-get($typography-map, 'bigger');
+    font-weight: 500;
     text-transform: uppercase;
   }
 

@@ -66,7 +66,7 @@ $main-navigation: (
 				background-color: map-get($main-navigation, menu-text-color-white);
 				color: map-get($main-navigation, menu-text-color);
 				display: flex;
-				font-weight: bold;
+				font-weight: 500;
 				justify-content: center;
 				padding: 10px;
 				position: relative;
@@ -132,7 +132,7 @@ $main-navigation: (
 			#{$this}__link {
 				//color: map-get($main-navigation, menu-text-color);
 				background: map-get($main-navigation, menu-accent-color-white);
-				font-weight: bold;
+				font-weight: 500;
 				position: relative;
 				width: auto;
 
@@ -193,7 +193,7 @@ $main-navigation: (
 		display: block;
 		font-family: $base-font-family;
 		font-size: 14px;
-		font-weight: bold;
+		font-weight: 500;
 		letter-spacing: 1.8px;
 		margin: 0 auto;
 		padding: 10px;

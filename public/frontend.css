@@ -602,6 +602,9 @@ table {
   margin: 0 0 1.5em;
   width: 100%; }
 
+.no-scroll {
+  overflow: hidden; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -721,7 +724,7 @@ textarea {
       background-color: #fff;
       color: #000;
       display: flex;
-      font-weight: bold;
+      font-weight: 500;
       justify-content: center;
       padding: 10px;
       position: relative;
@@ -751,7 +754,7 @@ textarea {
         .primary-menu__item--btn .primary-menu__link:hover::before, .primary-menu__item--btn .primary-menu__link:active::before, .primary-menu__item--btn .primary-menu__link:focus::before {
           transform: scaleX(1); }
     .primary-menu__item--current_page_parent .primary-menu__link, .primary-menu__item--active .primary-menu__link {
-      font-weight: bold;
+      font-weight: 500;
       position: relative;
       width: auto; }
       @media (min-width: 768px) {
@@ -785,7 +788,7 @@ textarea {
     display: block;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 500;
     letter-spacing: 1.8px;
     margin: 0 auto;
     padding: 10px;
@@ -853,19 +856,22 @@ textarea {
 
 .header {
   align-items: center;
-  background: rgba(0, 0, 0, 0.8);
   display: flex;
   height: 100px;
-  position: relative;
+  position: absolute;
   transition: background-color 0.3s ease-in-out;
   width: 100%;
-  z-index: 100; }
-  @media (min-width: 768px) {
+  z-index: 100;
+  top: 0; }
+  @media (min-width: 992px) {
     .header {
+      top: 50px;
       height: 100px; } }
   .header.is-sticky {
     height: 100px;
-    position: fixed; }
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0; }
   .header__container {
     margin: 0 auto;
     max-width: 1200px;
@@ -1205,6 +1211,7 @@ object {
   .services__title {
     color: #4a4747;
     font-size: 24px;
+    font-weight: 600;
     text-align: center;
     text-transform: uppercase; }
     @media (min-width: 768px) {
@@ -1282,6 +1289,7 @@ object {
   .projects__title {
     color: #4a4747;
     font-size: 24px;
+    font-weight: 500;
     text-align: center;
     text-transform: uppercase; }
     @media (min-width: 768px) {
@@ -1370,6 +1378,7 @@ object {
   .team__title {
     color: #4a4747;
     font-size: 24px;
+    font-weight: 500;
     text-align: center;
     text-transform: uppercase; }
     @media (min-width: 768px) {
@@ -1565,7 +1574,7 @@ object {
     max-width: 1200px; }
   .latest-news__title {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0;
     padding-bottom: 50px;
     padding-top: 25px;
@@ -1790,6 +1799,7 @@ object {
   top: -20px; }
 
 .contact-form {
+  overflow: hidden;
   padding-top: 60px; }
   .contact-form__submit {
     margin-top: 40px;
@@ -1817,6 +1827,7 @@ object {
   .office__title {
     color: #4a4747;
     font-size: 40px;
+    font-weight: 500;
     text-transform: uppercase; }
   .office__list {
     padding-top: 60px;
