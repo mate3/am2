@@ -1,0 +1,22 @@
+.contact-form {
+  padding-top: 60px;
+
+  &__submit {
+    margin-top: 40px;
+    max-width: 170px;
+
+    & input {
+      background: $base-white-color;
+      color: $base-eucalyptus-color;
+      font-size: map-get($typography-map, 'medium');
+      font-weight: 600;
+      padding: 15px;
+      text-transform: uppercase;
+      width: 100%;
+    }
+  }
+}
+
+.wpcf7-response-output {
+  color: $base-white-color;
+}

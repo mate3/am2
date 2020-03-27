@@ -1,0 +1,58 @@
+.office {
+  background: $base-white-color;
+  margin: 50px auto 0;
+  max-width: 470px;
+  padding: 50px;
+
+  @include media(tablet up) {
+    margin: 0 auto;
+  }
+
+  &__title {
+
+    @extend %heading-reset;
+    color: $base-tundora-color;
+    font-size: map-get($typography-map, 'bigger');
+    text-transform: uppercase;
+  }
+
+  &__list {
+    padding-top: 60px;
+    position: relative;
+  }
+
+  &__location {
+    padding-bottom: 30px;
+    padding-left: 60px;
+    position: relative;
+  }
+
+  &__contact {
+    padding-bottom: 30px;
+    padding-left: 60px;
+    position: relative;
+
+    a {
+      color: $base-tundora-color;
+      text-decoration: none;
+    }
+  }
+
+  &__mail {
+    padding-bottom: 30px;
+    padding-left: 60px;
+    position: relative;
+
+    a {
+      color: $base-tundora-color;
+      text-decoration: none;
+    }
+  }
+
+  &__icon {
+    color: $base-eucalyptus-color;
+    left: 5px;
+    position: absolute;
+    top: 2px;
+  }
+}

@@ -1,0 +1,43 @@
+.contact {
+  background-position: center;
+  background-size: cover;
+  padding: $section-spacing-mobile;
+
+  @include media(tablet up) {
+    padding: $section-spacing;
+  }
+
+  &__container {
+
+    @include site-container();
+    @include flex-container(1);
+
+    @include media(tablet up) {
+
+      @include flex-container(2);
+    }
+  }
+
+  &__title {
+
+    @extend %heading-reset;
+    color: $base-white-color;
+    font-size: map-get($typography-mobile-map, 'larger');
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+  }
+
+  &__details {
+    margin: 0 auto;
+
+    @include media(tablet up) {
+      padding-left: 60px;
+    }
+
+    @include media(desktop up) {
+      padding-left: 130px;
+    }
+  }
+
+}

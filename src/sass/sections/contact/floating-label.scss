@@ -1,0 +1,82 @@
+.floating-label {
+  &__two {
+    display: flex;
+    margin-right: -30px;
+
+    & > div {
+      padding-right: 30px;
+      width: 50%;
+    }
+
+    & input,
+    & textarea,
+    & select {
+      width: 100%;
+      
+      &::placeholder {
+        color: $base-white-color;
+      }
+    } 
+  }
+
+  &__one {
+    display: flex;
+
+    & > div {
+      margin-top: 100px;
+      width: 100%;
+    }
+
+    & input,
+    & textarea,
+    & select {
+      width: 100%;
+
+      &::placeholder {
+        color: $base-white-color;
+      }
+    } 
+  }
+
+  &__field {
+    background: transparent;
+    border-bottom: 1px solid $base-white-color !important;
+    border-left: none !important;
+    border-radius: 0 !important;
+    border-right: none !important;
+    border-top: none !important;
+    color: $base-white-color !important;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__message {
+    background: transparent;
+    border-bottom: 1px solid $base-white-color !important;
+    border-left: none !important;
+    border-radius: 0 !important;
+    border-right: none !important;
+    border-top: none !important;
+    color: $base-white-color !important;
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+    resize: none;
+    z-index: 10;
+  }
+
+  &__label {
+    color: $base-white-color;
+    font-size: map-get($typography-map, 'middle') !important;
+  }
+}
+
+.has-float-label input:placeholder-shown:not(:focus) + *, .has-float-label select:placeholder-shown:not(:focus) + *, .has-float-label textarea:placeholder-shown:not(:focus) + * {
+  opacity: 1;
+}
+
+.has-float-label label, .has-float-label > span {
+  top: -20px;
+}

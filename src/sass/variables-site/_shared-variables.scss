@@ -24,8 +24,10 @@ $typography-map: (
 	default:        $base-font-size,
 
 	huge:           50px,
+  bigger:         40px,
 	big:            32px,
 
+	larger:         36px,
 	large:          28px,
 	middle:					20px,
 	medium:         18px,
@@ -38,8 +40,10 @@ $typography-mobile-map: (
 	default:        $base-font-size,
 
 	huge:           48px,
+	bigger:         40px,
 	big:            24px,
 
+	larger:         28px,
 	large:          24px,
 	middle:					20px,
 	medium:         18px,

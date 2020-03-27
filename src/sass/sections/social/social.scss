@@ -1,0 +1,31 @@
+.social {
+  padding: $section-spacing-mobile;
+
+  @include media(tablet up) {
+    padding: $section-spacing;
+  }
+
+  &__icons {
+    display: block;
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  &__title {
+
+    @extend %heading-reset;
+    font-size: map-get($typography-mobile-map, 'huge');
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include media(tablet up) {
+      font-size: map-get($typography-map, 'huge');
+    }
+  }
+
+  &__icon {
+    color: $base-silver-color;
+    padding: 15px;
+  }
+}

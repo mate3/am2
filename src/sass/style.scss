@@ -1,9 +1,11 @@
 @import 'media-blender';
 @import 'swiper/swiper';
+@import 'float-label-css/scss/float-label';
 @import 'variables-site/variables-site';
 @import 'mixins/mixins-master';
 @import 'mixins/container';
 @import 'mixins/flex-container';
+
 
 /*--------------------------------------------------------------
 # Normalize
@@ -78,3 +80,8 @@
 @import 'sections/clients/clients';
 @import 'sections/latest-news/latest-news';
 @import 'blog/article';
+@import 'sections/contact/contact';
+@import 'sections/contact/floating-label';
+@import 'sections/contact/form';
+@import 'parts/office';
+@import 'sections/social/social';
