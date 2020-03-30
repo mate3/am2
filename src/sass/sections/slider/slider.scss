@@ -29,7 +29,8 @@
 		font-size: map-get($typography-mobile-map, 'huge');
 		max-width: 560px;
 		text-align: center;
-		text-transform: uppercase;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
 		width: 100%;
 
 		@include media(tablet up) {
@@ -42,6 +43,9 @@
 		@extend %button-reset;
 		@extend %link-transition;
 		color: $base-white-color;
+    font-size: map-get($typography-map, 'medium');
+    letter-spacing: 1.2px;
+    line-height: 40px;
 		margin-top: 70px;
 		text-align: center;
 		text-decoration: none;

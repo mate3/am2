@@ -17,6 +17,8 @@
     color: $base-tundora-color;
     font-size: map-get($typography-mobile-map, 'large');
     font-weight: 500;
+    letter-spacing: 1.4px;
+    line-height: 40px;
     text-align: center;
     text-transform: uppercase;
 
@@ -27,6 +29,7 @@
 
   &__intro {
     font-size: map-get($typography-map, 'medium');
+    line-height: 36px;
     margin: 30px auto 0;
     max-width: 630px;
     text-align: center;
@@ -88,7 +91,9 @@
     color: $base-white-color;
     font-size: map-get($typography-map, 'middle');
     font-weight: 300;
-    padding: 20px 10px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     transition-duration: 0.3s;

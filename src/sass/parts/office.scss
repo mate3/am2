@@ -14,21 +14,28 @@
     color: $base-tundora-color;
     font-size: map-get($typography-map, 'bigger');
     font-weight: 500;
+    letter-spacing: 2px;
     text-transform: uppercase;
   }
 
   &__list {
+    letter-spacing: -0.4px;
+    line-height: 30px;
     padding-top: 60px;
     position: relative;
   }
 
   &__location {
+    letter-spacing: -0.4px;
+    line-height: 30px;
     padding-bottom: 30px;
     padding-left: 60px;
     position: relative;
   }
 
   &__contact {
+    letter-spacing: -0.4px;
+    line-height: 30px;
     padding-bottom: 30px;
     padding-left: 60px;
     position: relative;
@@ -54,6 +61,6 @@
     color: $base-eucalyptus-color;
     left: 5px;
     position: absolute;
-    top: 2px;
+    top: 7px;
   }
 }

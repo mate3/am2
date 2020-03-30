@@ -3,16 +3,6 @@ $main-navigation: (
 	menu-text-color-white: $base-white-color,
 	menu-accent-color: $base-black-color,
 	menu-btn-hover-color: $base-white-color,
-	sizes: (
-		mobile: (
-			font-size: 24px,
-			color: $base-black-color,
-		),
-		tablet: (
-			font-size: 20px,
-			color: $base-black-color,
-		),
-	),
 );
 
 .primary-menu {
@@ -191,8 +181,8 @@ $main-navigation: (
 	&__link {
 		color: $base-white-color;
 		display: block;
-		font-family: $base-font-family;
-		font-size: 14px;
+		font-family: $second-font-family;
+		font-size: map-get($typography-map, 'small');
 		font-weight: 500;
 		letter-spacing: 1.8px;
 		margin: 0 auto;

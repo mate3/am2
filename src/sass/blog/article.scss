@@ -51,6 +51,7 @@
     color: $base-tundora-color;
     display: inline-block;
     font-size: map-get($typography-mobile-map, 'smaller');
+    line-height: 21px;
     padding-top: 30px;
 
     p {
@@ -86,7 +87,6 @@
   }
 
   &__comments {
-    
     color: $base-tundora-color;
     display: inline-block;
     font-size: map-get($typography-mobile-map, 'smaller');
